@@ -1,0 +1,296 @@
+@media screen and (max-width: 676px) {
+  /* 676px以下に適用されるCSS（タブレット用） */
+
+  // header
+  header {
+    max-width: 100%;
+    height: 50px;
+
+    .main-logo {
+      img {
+        width: auto;
+        height: 50px;
+        margin-left: 8px !important;
+      }
+    }
+
+    .main-nav {
+      display: none;
+    }
+    .shop-phone {
+      display: none;
+    }
+    .contact {
+      display: none;
+    }
+
+    .dropdwn {
+      display: none;
+    }
+
+    // SPグローバルメニュードロワー
+    .sp-menu_drawer {
+      display: block;
+
+      // バーガーメニュー
+      .burger-btn {
+        display: block;
+        width: 40px;
+        height: 38px;
+        position: relative;
+        top: 5px;
+        z-index: 3;
+        border: none;
+      }
+      .bar {
+        width: 35px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        left: 1%;
+        transform: translateX(-50%);
+        background-color: #fff;
+      }
+      .bar_top {
+        top: 8px;
+      }
+      .bar_mid {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bar_bottom {
+        bottom: 8px;
+      }
+
+      .burger-btn.close .bar_top {
+        transform: translate(-50%, 10px) rotate(45deg);
+        transition: transform 0.3s;
+      }
+      .burger-btn.close .bar_mid {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .burger-btn.close .bar_bottom {
+        transform: translate(-50%, -8px) rotate(-45deg);
+        transition: transform 0.3s;
+      }
+      // /バーガーメニュー
+
+      .nav-sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.95);
+        transition: all 0.3s;
+        transform: translate(300px);
+        z-index: 2;
+      }
+      .nav-sp.open {
+        transform: translate(0);
+      }
+      .nav-sp ul {
+        margin: 0;
+        padding: 1em;
+        list-style-type: none;
+      }
+      .nav-sp ul li {
+        padding: 1em 0;
+        border-bottom: 1px solid #fff;
+      }
+      .nav-sp ul li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    // /SPグローバルメニュードロワー
+  }
+
+  // main
+
+  // ホームのビデオ
+  .video-wrap {
+    margin-top: -100px;
+
+    .video_messeg {
+      p {
+        margin-top: -80px;
+      }
+    }
+
+    .precautionary-statement {
+      position: relative;
+      top: -130px;
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // what is Smilee
+  .what-is-smilee_title {
+    margin-top: 150px !important;
+  }
+
+  .profile-deteles_text-img {
+    display: block !important;
+    margin: 50px auto 100px !important;
+
+    img {
+      display: none;
+    }
+
+    p {
+      padding: 0 !important;
+      max-width: 120%;
+      margin: 0 auto;
+    }
+  }
+
+  .General-staff {
+    text-align: center;
+
+    .General-staff_card {
+      display: block;
+
+      .General-staff_card_item {
+        margin: 20px auto;
+      }
+    }
+  }
+
+  // 料金表
+  .price-wrap {
+    margin-top: 150px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // アクセス
+  .access-map-title {
+    h1 {
+      margin-top: 150px;
+    }
+  }
+
+  .address-deteles {
+    display: none;
+  }
+
+  .address-deteles_sp {
+    display: block;
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    h3::before {
+      content: "[";
+      color: rgb(58, 139, 185);
+      padding-right: 5px;
+    }
+
+    h3::after {
+      content: "]";
+      color: rgb(58, 139, 185);
+      padding-left: 5px;
+    }
+  }
+
+  .when-coming-wrap {
+    margin-top: 70px;
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+
+  // ファーストセクション
+  .container {
+    text-align: center;
+  }
+
+  .first-section_comment_wrap {
+    display: block;
+
+    p {
+      text-align: left !important;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+  // /ファーストセクション
+
+  .accessories-top-wrap {
+    h3 {
+      margin-top: 100px !important;
+    }
+
+    p {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  // お知らせ
+  .news_wrap-deteles {
+    max-width: 100%;
+
+    .news_wrap-deteles-item {
+      display: block;
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        overflow-wrap: break-word;
+        text-align: center;
+        padding: 25px 0;
+      }
+    }
+  }
+
+  // footer
+  footer {
+    display: block;
+    text-align: center;
+
+    #footerID {
+      display: block;
+    }
+
+    .footer-address {
+      text-align: center;
+
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+
+    .footer-sitemap-wrap {
+      padding: 0;
+
+      .footer-sitemap-list {
+        display: block;
+        padding: 30px 20px 30px;
+
+        h3 {
+          margin-top: 45px;
+        }
+      }
+    }
+
+    .footer-sns_list {
+      justify-content: space-around;
+    }
+  }
+}

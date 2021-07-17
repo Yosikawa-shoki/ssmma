@@ -1,0 +1,390 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* 横（x軸）スクロールバーを消す */
+body {
+  overflow-x: hidden;
+}
+
+/* /横（x軸）スクロールバーを消す */
+.main-span {
+  color: firebrick;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, transparent), color-stop(85%, #c1e0ff));
+  background: linear-gradient(transparent 85%, #c1e0ff 85%);
+  font-weight: bold;
+}
+
+.main-font {
+  font-family: "Pattaya", sans-serif;
+}
+
+.sub-font {
+  font-family: "Shippori Mincho B1", serif;
+}
+
+.main-border {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #ffff00));
+  background: linear-gradient(transparent 70%, #ffff00 0%);
+}
+
+.sub-border {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #469adf));
+  background: linear-gradient(transparent 70%, #469adf 0%);
+}
+
+header {
+  background-color: #c3dbc3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+}
+
+header .general_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .general_header img {
+  width: auto;
+  height: 100px;
+}
+
+header .general_header .main-logo {
+  margin-right: auto;
+}
+
+header .general_header .main-logo img {
+  padding: 15px;
+  margin-left: 30px;
+}
+
+header .shop-phone {
+  padding-right: 20px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 縦方向中央揃え（Safari用） */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 縦方向中央揃え */
+  /* 横方向中央揃え（Safari用） */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 横方向中央揃え */
+}
+
+header .shop-phone p {
+  margin-bottom: 0;
+}
+
+header .main-sns_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+
+header .main-sns_list img {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+header .main-sns_list li a:hover {
+  background: none;
+}
+
+header .contact {
+  width: 170px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  line-height: 100px;
+}
+
+header .contact p {
+  width: 100%;
+  height: 100%;
+  background-color: darkgrey;
+  margin-bottom: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+header .contact p:hover {
+  color: darkgrey;
+  background-color: #469adf;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .sp-menu_drawer {
+  display: none;
+}
+
+.dropdwn {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+}
+
+li {
+  max-width: calc(1200px / 5);
+  position: relative;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdwn > li {
+  width: 1200px;
+  margin: 1px;
+  background: #484849;
+  display: inline;
+}
+
+.dropdwn_menu {
+  width: 100%;
+  display: none;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 5px;
+  padding: 0;
+  background: #8e91a1;
+}
+
+.dropdwn_menu li {
+  width: 100%;
+}
+
+.dropdwn_menu li a {
+  padding: 5px 0;
+  margin: -5px 5px -5px -5px;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+}
+
+li a:hover {
+  background: #d13c55;
+  color: #414141;
+}
+
+.video-wrap {
+  margin-top: 220px;
+  text-align: center;
+}
+
+.video-wrap .video_messeg p {
+  background-color: rgba(85, 107, 47, 0.3);
+  padding: 20px;
+  margin: 50px 30px 0;
+  font-weight: bold;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+.video-wrap .precautionary-statement p {
+  font-size: 2rem;
+}
+
+.container {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.container h2 {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.first-section_comment_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first-section_comment_wrap p {
+  display: inline;
+  font-weight: bold;
+}
+
+.first-section_comment {
+  position: relative;
+  top: 15px;
+}
+
+.c-basic_section_introduction_text {
+  padding: 50px;
+}
+
+.see-more {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.see-more a {
+  display: block;
+  color: #acabab;
+  line-height: 50px;
+}
+
+.see-more a:hover {
+  color: #e66d6d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.see-more p {
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  background-color: lightcyan;
+  border: lightgray 3px solid;
+  border-radius: 10px;
+}
+
+.see-more p:hover {
+  background-color: #48ebeb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#news_wrap {
+  text-align: center;
+  margin: 150px auto 70px;
+}
+
+.news_wrap-deteles {
+  width: 960px;
+  height: auto;
+  margin: 50px auto 100px;
+}
+
+.news_wrap-deteles .news_wrap-deteles-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: #484849 1px solid;
+  margin: 40px 0;
+}
+
+.news_wrap-deteles .news_wrap-deteles-item p {
+  padding-left: 200px;
+  margin-bottom: 0;
+  position: relative;
+  top: 5px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #cecece;
+}
+
+footer #footerID {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-main-wrap {
+  padding: 50px 50px 10px;
+}
+
+footer .footer-address img {
+  padding: 15px 0;
+}
+
+footer .footer-address p {
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+
+footer .footer-address a {
+  padding-left: 15px;
+}
+
+footer .footer-sns_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+footer .footer-sns_list li a:hover {
+  background: none;
+}
+
+footer .footer-sitemap-list {
+  width: 100%;
+  padding: 100px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-sitemap-list h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+footer .footer-sitemap-list .footer-home {
+  padding: 0 20px;
+}
+
+footer .footer-sitemap-list .footer-whatis {
+  padding: 0 20px;
+}
+
+footer .footer-sitemap-list .footer-menu {
+  padding: 0 20px;
+}
+
+footer .footer-sitemap-list .footer-news {
+  padding: 0 20px;
+}
+
+footer .footer-sitemap-list .footer-reservation {
+  padding: 0 20px;
+}
+/*# sourceMappingURL=style.css.map */

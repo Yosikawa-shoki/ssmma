@@ -1,0 +1,247 @@
+@charset "UTF-8";
+.access-map-title h1 {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  color: red;
+  text-align: center;
+}
+
+iframe {
+  border: 0;
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
+}
+
+.address-deteles p {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.when-coming-wrap {
+  margin-bottom: 50px;
+}
+
+.address-deteles_sp {
+  display: none;
+}
+
+.what-is-smilee_wrap {
+  text-align: center;
+}
+
+.what-is-smilee_wrap .what-is-smilee_title {
+  margin-top: 250px;
+}
+
+.what-is-smilee_wrap .profile-wrap {
+  margin-top: 50px;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles {
+  margin-top: 0;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles h2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #ffff00));
+  background: linear-gradient(transparent 70%, #ffff00 0%);
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles h3 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles p {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles h3::before {
+  content: "『";
+  color: darkmagenta;
+  padding-right: 10px;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles h3::after {
+  content: "』";
+  color: darkmagenta;
+  padding-left: 10px;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles .profile-deteles_text-img {
+  margin: 100px 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what-is-smilee_wrap .profile-wrap .profile-deteles .profile-deteles_text-img img {
+  margin-left: auto;
+}
+
+.what-is-smilee_wrap .staff_title {
+  margin-top: 80px;
+}
+
+.what-is-smilee_wrap .staff_title h1::before {
+  content: "-";
+  color: indigo;
+  padding-right: 10px;
+}
+
+.what-is-smilee_wrap .staff_title h1::after {
+  content: "-";
+  color: indigo;
+  padding-left: 10px;
+}
+
+.what-is-smilee_wrap .General-staff_card {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.what-is-smilee_wrap .General-staff_card .General-staff_card_item {
+  width: 260px;
+  height: auto;
+  border: grey 2px solid;
+}
+
+.what-is-smilee_wrap .General-staff_card .General-staff_card_item h3 {
+  padding: 15px 0;
+}
+
+.what-is-smilee_wrap .General-staff_card .General-staff_card_item img {
+  margin-bottom: 15px;
+}
+
+.accessories-top-wrap h3 {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.accessories-top-wrap p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.product-purchase-button {
+  text-align: center;
+}
+
+.product-purchase-button p {
+  margin-left: auto;
+  width: 180px;
+  height: 40px;
+  background-color: red;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-radius: 15px;
+}
+
+.product-purchase-button p:hover {
+  background-color: lightgreen;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: lightslategray 2px solid;
+}
+
+.product-purchase-button p a {
+  color: white;
+}
+
+.product-list {
+  margin-bottom: 70px;
+}
+
+.price-wrap {
+  text-align: center;
+  margin: 200px auto 70px;
+}
+
+.price-wrap h1 {
+  margin-bottom: 50px;
+}
+
+.reservation-form-wrap {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.reservation-form-main {
+  margin-top: 50px;
+}
+
+.reservation-form-main h3::after {
+  content: ":";
+  padding-right: 20px;
+}
+
+.reservation-form-main .calendar {
+  display: inline;
+}
+
+.reservation-form-main input {
+  position: relative;
+  top: -5px;
+}
+
+.reservation-form-main .reservation-form-item {
+  display: block;
+  margin: 20px 0;
+}
+
+.reservation-form-main .reservation-form-note {
+  color: red;
+}
+
+.reservation-form-main .submit-btn-wrap {
+  padding: 70px 0;
+}
+
+.reservation-status-wrap {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.reservation-status-wrap table {
+  width: 100%;
+  height: 300px;
+  margin: 50px 0 100px;
+}
+
+.reservation-status-wrap table th {
+  border: 1px solid black;
+  background-color: #dfdfdf;
+  font-weight: bold;
+}
+
+.reservation-status-wrap table tr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.reservation-status-wrap table tr .regular-holiday {
+  background-color: red;
+  width: 15%;
+}
+
+.reservation-status-wrap table tr .top-td {
+  width: 15%;
+  background-color: lightcyan;
+}
+
+.reservation-status-wrap table td {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=partials.css.map */
